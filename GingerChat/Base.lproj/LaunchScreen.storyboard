@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27Q-7A-jpn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFk-8I-Ibg">
+                                        <rect key="frame" x="260" y="280" width="89" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="CqO-Yl-Rq6"/>
+                                            <constraint firstAttribute="width" constant="89" id="ezd-Yg-gjs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gchat-logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jf5-cH-lrf">
+                                        <rect key="frame" x="225" y="129" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="178-Vq-GD1"/>
+                                            <constraint firstAttribute="height" constant="150" id="c9A-IA-zVA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.24705882352941178" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jf5-cH-lrf" firstAttribute="centerX" secondItem="27Q-7A-jpn" secondAttribute="centerX" id="0gA-0Z-W6O"/>
+                                    <constraint firstItem="BFk-8I-Ibg" firstAttribute="centerX" secondItem="27Q-7A-jpn" secondAttribute="centerX" constant="4.5" id="MrW-0Z-fQ0"/>
+                                    <constraint firstItem="BFk-8I-Ibg" firstAttribute="top" secondItem="Jf5-cH-lrf" secondAttribute="bottom" constant="1" id="eke-cq-hdm"/>
+                                    <constraint firstItem="Jf5-cH-lrf" firstAttribute="top" secondItem="27Q-7A-jpn" secondAttribute="top" constant="129" id="wgq-3h-k9S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="27Q-7A-jpn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Arm-Id-XNk"/>
+                            <constraint firstItem="27Q-7A-jpn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="PiX-sJ-niL"/>
+                            <constraint firstAttribute="trailing" secondItem="27Q-7A-jpn" secondAttribute="trailing" id="iaE-GX-xCI"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="27Q-7A-jpn" secondAttribute="bottom" id="mqe-Uy-Spk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="371"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FwU-5x-K3a">
+            <objects>
+                <viewController id="t6e-zt-KRl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ak9-Lc-BgH"/>
+                        <viewControllerLayoutGuide type="bottom" id="jOQ-5W-Cos"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Cl-et-HsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSL-nw-op8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fSL-nw-op8" secondAttribute="trailing" id="1e5-3O-sgf"/>
+                            <constraint firstItem="jOQ-5W-Cos" firstAttribute="top" secondItem="fSL-nw-op8" secondAttribute="bottom" id="SHs-qS-vWr"/>
+                            <constraint firstItem="fSL-nw-op8" firstAttribute="leading" secondItem="7Cl-et-HsS" secondAttribute="leading" id="iYa-Qt-aDD"/>
+                            <constraint firstItem="fSL-nw-op8" firstAttribute="top" secondItem="7Cl-et-HsS" secondAttribute="top" id="t5s-tt-9SX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QT7-mP-Ncg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gchat-logo1.png" width="1200" height="1200"/>
+    </resources>
+</document>

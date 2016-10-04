@@ -1,0 +1,6 @@
+framework module Pods_GingerChat {
+  umbrella header "Pods-GingerChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
