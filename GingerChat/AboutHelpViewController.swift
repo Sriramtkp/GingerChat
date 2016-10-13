@@ -17,9 +17,9 @@ class AboutHelpViewController: UIViewController {
       
       
       
-      self.title = "GC Version"
+      self.title = "About and Help"
       
-      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blueColor()]
       
       
     }
@@ -30,6 +30,15 @@ class AboutHelpViewController: UIViewController {
     }
     
 
+    
+    @IBAction func cancelBtn(sender: UIBarButtonItem) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
+    
     /*
    /
    

@@ -21,7 +21,6 @@ class ProfileUpdateTableViewController: UITableViewController, UIImagePickerCont
   @IBOutlet weak var textLastName: UITextField!
   
 
-  @IBOutlet weak var doneBarBtnProperty: UIBarButtonItem!
   
   //MARK: Action
   @IBAction func addPhotoButton(sender: AnyObject) {
@@ -94,12 +93,12 @@ class ProfileUpdateTableViewController: UITableViewController, UIImagePickerCont
 //      self.navigationController?.navigationBar.layer.cornerRadius = (self.navigationController?.navigationBar.bounds.height)!/2
       
   self.title = "Update Profile"
-      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blueColor()]
       
       self.navigationItem.hidesBackButton = true
       
-     self.doneBarBtnProperty.tintColor = UIColor.whiteColor()
-      self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
+//     self.doneBarBtnProperty.tintColor = UIColor.whiteColor()
+//      self.navigationController?.navigationBar.barTintColor = UIColor.blueColor()
       
 
       imageViewProfile.layer.cornerRadius = imageViewProfile.bounds.height / 2
@@ -142,6 +141,9 @@ class ProfileUpdateTableViewController: UITableViewController, UIImagePickerCont
     
     self.view.endEditing(true)
 
+    
+    self.performSegueWithIdentifier("historySegue", sender: self)
+    
     
   }
     override func didReceiveMemoryWarning() {

@@ -25,7 +25,7 @@ class PasswordViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
 
       self.title = "Password Update"
-      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+      self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blueColor()]
   
       self.navigationItem.hidesBackButton = true
 //      self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
@@ -34,8 +34,7 @@ class PasswordViewController: UIViewController,UITextFieldDelegate {
       
       
 //      tap gesture
-      let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(PasswordViewController.DismissKeyboard))
-      view.addGestureRecognizer(tap)
+     tapView()
       
       self.updateButtonOutlet.layer.cornerRadius = self.updateButtonOutlet.frame.size.height/2
 
@@ -44,6 +43,13 @@ class PasswordViewController: UIViewController,UITextFieldDelegate {
   
   }
 
+  
+  func tapView() {
+    
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(PasswordViewController.DismissKeyboard))
+    view.addGestureRecognizer(tap)
+    
+  }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -101,7 +107,7 @@ class PasswordViewController: UIViewController,UITextFieldDelegate {
       })}else{
     
     
-//    self.performSegueWithIdentifier("updateProfile", sender: self)
+    self.performSegueWithIdentifier("updateProfile", sender: self)
     
     }
       

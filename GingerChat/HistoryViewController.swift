@@ -20,6 +20,7 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
   
   
   
+  @IBOutlet weak var tableViewOutlet: UITableView!
   
   
   

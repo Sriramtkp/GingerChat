@@ -175,8 +175,7 @@ class ViewController: UIViewController,UITextFieldDelegate, CLLocationManagerDel
     locationCurrent()
     
     //tap gesture
-    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.DismissKeyboard))
-    view.addGestureRecognizer(tap)
+    tapTheView()
     //cornerRadius
     self.loginBtnOutlet.layer.borderWidth = 1.0
     self.loginBtnOutlet.layer.borderColor = UIColor.greenColor().CGColor
@@ -190,7 +189,6 @@ class ViewController: UIViewController,UITextFieldDelegate, CLLocationManagerDel
 
     
     
-    
     /*
     socket = WebSocket(url: NSURL(string: "ws://192.168.0.100/MvcWebsocketChat/chat.ashx?username=kk")!)
      socket!.delegate = self
@@ -202,6 +200,16 @@ class ViewController: UIViewController,UITextFieldDelegate, CLLocationManagerDel
     
     }
 
+  
+  //MARK: tap gesture
+  
+  func tapTheView () {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.DismissKeyboard))
+    view.addGestureRecognizer(tap)
+    
+    
+  }
+  
   
   //MARK: Location register
   
@@ -392,10 +400,10 @@ class ViewController: UIViewController,UITextFieldDelegate, CLLocationManagerDel
       
       if self.typeVar == 101 {
         
-//        self.performSegueWithIdentifier("updatePassword", sender: self)
+        self.performSegueWithIdentifier("updatePassword", sender: self)
       }else if self.typeVar == 102{
         
-//        self.performSegueWithIdentifier("segueOTP", sender: self)
+        self.performSegueWithIdentifier("segueOTP", sender: self)
         
         
       }else if self.typeVar == 401{
